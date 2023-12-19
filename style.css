@@ -1,8 +1,6 @@
 * {
     box-sizing: border-box;
-
 }
-
 
 
 html {
@@ -70,6 +68,7 @@ figure {
     padding: 1em;
     border-radius: 5px;
     position: relative;
+    overflow-wrap: break-word;
 }
 
 .toggle-todo {
@@ -96,11 +95,11 @@ figure {
     font-weight: bold;
 }
 
-.remove-todo:hover{
+.remove-todo:hover {
     background-color: #3a3a3f;
 }
 
-.completed{
+.completed {
     color: #14c780;
     text-decoration: line-through;
 }

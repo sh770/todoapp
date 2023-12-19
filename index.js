@@ -5,6 +5,16 @@ let todos = [];
 const todoListElemrnt = document.getElementById("todo-list");
 const inputElemrnt = document.querySelector("input");
 
+const myButton = document.getElementById("myButton");
+
+// הוסף אירוע לחיצה על הכפתור
+myButton.addEventListener("click", ()=> {
+    // קוד הפונקציה שתרצה להפעיל בעת לחיצה
+    createTodoItem();
+});
+
+
+
 
 const renderTodoList = () => {
   let todoComponents = "";
@@ -34,6 +44,7 @@ const toggleTodoItem = (id) => {
     const idx = todos.findIndex(todo => todo.id === id)
     todos[idx].isCompleted = !todos[idx].isCompleted
     renderTodoList()
+    // saveTodoListToJson()
 };
 
 const createTodoItem = () => {
@@ -49,11 +60,13 @@ const createTodoItem = () => {
     todos.push(todoItem)
     inputElemrnt.value = ""
     renderTodoList()
+    // saveTodoListToJson()
 }
 
 const removeTodoById = (id) => {
     todos = [...todos.filter(todo => todo.id !== id)]
     renderTodoList()
+    // saveTodoListToJson()
 }
 
 const genId = () => {
@@ -61,4 +74,24 @@ const genId = () => {
     return globalid
 }
 
-renderTodoList();
+// renderTodoList();
+
+// const saveTodoListToJson = () => {
+//     const jsonContent = JSON.stringify(todos);
+//     localStorage.setItem("todoList", jsonContent);
+//   };
+  
+//   // פונקציה לטעינת רשימת הטודו מקובץ JSON
+//   const loadTodoListFromJson = () => {
+//     // כאן יש להשתמש באותה שיטה שבה שמרת את רשימת הטודו
+//     const jsonContent = localStorage.getItem("todoList");
+//     if (jsonContent) {
+//       todos = JSON.parse(jsonContent);
+//       renderTodoList(); // עדכון של התצוגה לאחר טעינה
+//     }
+//   };
+  
+
+  
+
+  
