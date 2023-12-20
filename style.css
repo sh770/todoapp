@@ -2,15 +2,23 @@
     box-sizing: border-box;
 }
 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 
 html {
     margin: 0;
-    background-color: #222025;
+    background-color: #575549;
     font-family: Roboto, sans-serif;
+    /* font-family: Roboto, sans-serif; */
+    /* font-family: Georgia; */
+    /* cursor: url('cursor-hand.png'), pointer ; */
 }
+/* html:hover{
+    cursor: url('cursor-hand.png') ;
+} */
 
 body {
-    color: #D2D2D2;
+    color: #d08080;
     text-align: center;
     direction: rtl;
 }
@@ -47,7 +55,7 @@ button {
 }
 
 button:hover {
-    background-color: #3a3a3f;
+    background-color: #0c0c1a;
 }
 
 article {
