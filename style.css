@@ -7,7 +7,7 @@
 
 html {
     margin: 0;
-    background-color: #575549;
+    background-color: hsl(101, 21%, 37%);
     font-family: Roboto, sans-serif;
     /* font-family: Roboto, sans-serif; */
     /* font-family: Georgia; */
@@ -18,7 +18,7 @@ html {
 } */
 
 body {
-    color: #d08080;
+    color: #101697;
     text-align: center;
     direction: rtl;
 }
@@ -48,10 +48,12 @@ button {
     background-color: #2e2d31;
     border: unset;
     color: #D2D2D2;
-    padding: 1.2em;
+    padding: 1em;
     border-radius: 5px;
     cursor: pointer;
     width: 100px;
+    font-size: 0.9em;
+
 }
 
 button:hover {
@@ -74,9 +76,11 @@ figure {
     width: 320px;
     background-color: #2e2d31;
     padding: 1em;
-    border-radius: 5px;
+    border-radius: 15px;
     position: relative;
     overflow-wrap: break-word;
+    
+    border: 3px solid rgb(59, 57, 206);
 }
 
 .toggle-todo {
@@ -97,8 +101,8 @@ figure {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border-bottom-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
     font-size: 1.2em;
     font-weight: bold;
 }
